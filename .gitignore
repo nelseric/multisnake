@@ -58,4 +58,4 @@ docs/_build/
 target/
 
 #Sublime workspace
-multisnake.sublime-workspace
+multisnake.sublime-*
