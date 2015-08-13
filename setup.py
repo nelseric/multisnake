@@ -19,8 +19,8 @@ setup(
     packages=find_packages(exclude=('tests', 'docs')),
     entry_points={
         "console_scripts": [
-            "multisnake-server = multisnake.server:start",
-            "multisnake-client = multisnake.client:start"
+            "multisnake-server = multisnake.network_server:start",
+            "multisnake-client = multisnake.network_client:start"
         ]
     }
 )
