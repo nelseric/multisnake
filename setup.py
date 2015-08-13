@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-
 with open('README.md') as f:
     readme = f.read()
 
@@ -19,5 +18,9 @@ setup(
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),
     entry_points={
+        "console_scripts": [
+            "multisnake-server = multisnake.server:start",
+            "multisnake-client = multisnake.client:start"
+        ]
     }
 )

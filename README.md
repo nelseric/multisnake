@@ -1,8 +1,8 @@
 # Multisnake
 A muliplayer Snake game
 
-Snakes will move around in Cells.  
-Cells will randomly have one to four Doors on its the edges.  
+Snakes will move around in Rooms.  
+Rooms will randomly have one to four Doors on its the edges.  
 Door widths can be random
 
 When a Snake enters a Door completely, it will be transported to a different room.  
@@ -25,6 +25,21 @@ Segments will have different colors to show movement
 
 The longest snake is winning
 The longest ever snake has the highest score
+
+## Server Tick Steps
+1. Send Game State
+2. Listen player commands
+3. Wait tick length
+4. Calculate Movement
+5. Calculate Collisions
+6. Repeat
+
+## Client
+1. Listen for game State
+    * Update game state
+    * Redraw room
+2. Listen for input
+    * Send new directions for next tick
 
 ## Installation
 This is a standalone application so you should execute:
